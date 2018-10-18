@@ -5,7 +5,6 @@ import (
 	"time"
 )
 
-
 func printCount(c chan int) {
 	n := 0
 	for n >= 0 {
@@ -14,10 +13,9 @@ func printCount(c chan int) {
 	}
 }
 
-
 func main() {
 	c := make(chan int)
-	a := []int{2,6,7,8,3,2,6,5,3,5,-1}
+	a := []int{2, 6, 7, 8, 3, 2, 6, 5, 3, 5, -1}
 
 	go printCount(c)
 
